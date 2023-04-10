@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/haydenlowry/Documents/School/IS/Intex II/Mummies/Backend/Mummies/Mummies/Mummies.csproj": {}
+    "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/Mummies.csproj": {}
   },
   "projects": {
-    "/Users/haydenlowry/Documents/School/IS/Intex II/Mummies/Backend/Mummies/Mummies/Mummies.csproj": {
+    "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/Mummies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/haydenlowry/Documents/School/IS/Intex II/Mummies/Backend/Mummies/Mummies/Mummies.csproj",
+        "projectUniqueName": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/Mummies.csproj",
         "projectName": "Mummies",
-        "projectPath": "/Users/haydenlowry/Documents/School/IS/Intex II/Mummies/Backend/Mummies/Mummies/Mummies.csproj",
-        "packagesPath": "/Users/haydenlowry/.nuget/packages/",
-        "outputPath": "/Users/haydenlowry/Documents/School/IS/Intex II/Mummies/Backend/Mummies/Mummies/obj/",
+        "projectPath": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/Mummies.csproj",
+        "packagesPath": "/Users/wilverine7/.nuget/packages/",
+        "outputPath": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/haydenlowry/.nuget/NuGet/NuGet.Config"
+          "/Users/wilverine7/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -66,9 +66,21 @@
               "target": "Package",
               "version": "[6.0.15, )"
             },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             }
           },
           "imports": [
