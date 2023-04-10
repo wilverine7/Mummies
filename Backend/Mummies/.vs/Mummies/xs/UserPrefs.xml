@@ -1,32 +1,37 @@
 ﻿<Properties StartupConfiguration="{3EE3E605-C85C-4129-997E-A17F4FEFCC61}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Mummies PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mummies/Pages/Index.cshtml">
-    <Files>
-      <File FileName="Mummies/Pages/Shared/_Layout.cshtml" Line="36" Column="26" />
-      <File FileName="Mummies/Pages/Index.cshtml.cs" Line="23" Column="1" />
-      <File FileName="Mummies/Pages/Index.cshtml" Line="13" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.Mummies PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mummies" expanded="True">
             <Node name="Mummies" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Account" expanded="True">
+                      <Node name="ConfirmEmail.cshtml" expanded="True">
+                        <Node name="ConfirmEmail.cshtml.cs" selected="True" />
+                      </Node>
+                      <Node name="Login.cshtml" expanded="True" />
+                      <Node name="Register.cshtml" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
               <Node name="Pages" expanded="True">
                 <Node name="Shared" expanded="True" />
+                <Node name="BurialRecords.cshtml" expanded="True" />
                 <Node name="Index.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="img" expanded="True" />
               </Node>
             </Node>
           </Node>

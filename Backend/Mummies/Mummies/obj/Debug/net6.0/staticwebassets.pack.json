@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/wwwroot/img/.DS_Store",
+      "PackagePath": "staticwebassets/img/.DS_Store"
+    },
+    {
       "Id": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

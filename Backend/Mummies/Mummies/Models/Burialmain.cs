@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Mummies.Models
 {
     public partial class Burialmain
     {
-        public long Id { get; set; }
+        [Key]
+        [Required]
+        public int Id { get; set; }
         public string? Squarenorthsouth { get; set; }
         public string? Headdirection { get; set; }
         public string? Sex { get; set; }

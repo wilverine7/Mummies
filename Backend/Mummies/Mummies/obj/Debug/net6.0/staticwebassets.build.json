@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z6r/x+jaNeWMxBkoWAOl9wkXba8G8xf0TspjDlfAzj8=",
+  "Hash": "xnnNxAi/dZ2+edJLOSbe4S47I0dDGW31n1wYa8wRDMs=",
   "Source": "Mummies",
   "BasePath": "_content/Mummies",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/wwwroot/img/.DS_Store",
+      "SourceId": "Mummies",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/wwwroot/",
+      "BasePath": "_content/Mummies",
+      "RelativePath": "img/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/.DS_Store"
     },
     {
       "Identity": "/Users/wilverine7/Desktop/School/Winter 2023/Mummies/Backend/Mummies/Mummies/wwwroot/js/site.js",

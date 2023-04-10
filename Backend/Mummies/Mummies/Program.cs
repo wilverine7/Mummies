@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Mummies.Data;
+using Mummies.Models;
 using MyApplication.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -58,6 +59,11 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+//builder.Services.AddScoped<IBurialRecordsRepository, EFBurialRecordsRepository>();
+builder.Services.AddDbContext<Mummies_databaseContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration["ConnectionStrings:MummiesDbConnection"]);
+});
 
 var app = builder.Build();
 
@@ -77,11 +83,23 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "BurialRecords",
+        pattern: "BurialRecords",
+        new { Controller ="Home", action="BurialRecords"});
+
+    endpoints.MapDefaultControllerRoute();
+    endpoints.MapRazorPages();
+});
+
+
+
+app.UseAuthentication();
 
 app.Run();
 
