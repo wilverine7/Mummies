@@ -13,16 +13,7 @@ namespace Mummies.Controllers
     [AllowAnonymous]
     public class HomeController : Controller
     {
-        private BurialRecordsDbContext context { get; set; }
-
-        public HomeController(BurialRecordsDbContext temp) => context = temp;
-
-        public IActionResult BurialRecords()
-        {
-            var b = context.BurialRecords.ToList();
-
-            return View(b);
-        }
+        
     }
 }
 

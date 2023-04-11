@@ -13,9 +13,9 @@ builder.Services.AddDbContext<MyApplication.Data.ApplicationDbContext>(options =
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<MyApplication.Data.ApplicationDbContext>();
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+//    .AddRoles<IdentityRole>()
+//    .AddEntityFrameworkStores<MyApplication.Data.ApplicationDbContext>();
 
 builder.Services.AddRazorPages();
 
@@ -59,11 +59,15 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
-//builder.Services.AddScoped<IBurialRecordsRepository, EFBurialRecordsRepository>();
+builder.Services.AddScoped<IBurialRecordsRepository, EFBurialRecordsRepository>();
 builder.Services.AddDbContext<Mummies_databaseContext>(options =>
 {
     options.UseNpgsql(builder.Configuration["ConnectionStrings:MummiesDbConnection"]);
 });
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<Mummies_databaseContext>()
+    .AddEntityFrameworkStores<MyApplication.Data.ApplicationDbContext>();
 
 var app = builder.Build();
 

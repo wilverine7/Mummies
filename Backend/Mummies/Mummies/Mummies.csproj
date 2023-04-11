@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Models\extra\" />
     <None Remove="Views\" />
     <None Remove="Controllers\" />
     <None Remove="Views\Home\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -37,9 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\img\" />
-    <Folder Include="Models\extra\" />
     <Folder Include="Views\" />
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
